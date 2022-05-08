@@ -5,17 +5,15 @@ import '@testing-library/jest-dom/extend-expect'
 import Gallery from '..'
 const portrait = { name: "portraits", description: "Portraits of people in my life" };
 
-
 afterEach(cleanup)
 
-describe('Gallery is rendering', () => {
-
+describe('Gallery component', () => {
 
   it('renders', () => {
     render(<Gallery currentCategory={portrait} />);
   });
 
-  it('renders', () => {
+  it('matches snapshot', () => {
     const { asFragment } = render(<Gallery currentCategory={portrait} />)
     expect(asFragment()).toMatchSnapshot()
   })
