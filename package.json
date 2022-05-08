@@ -1,8 +1,8 @@
 {
   "name": "photo-port",
   "version": "0.1.0",
-  "homepage": "http://patrickaregan.github.io/photo-port",
   "private": true,
+  "homepage": "https://patrickaregan.github.io/photo-port/",
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
